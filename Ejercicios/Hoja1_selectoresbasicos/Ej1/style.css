@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: blue;
+}
+
+p{
+    background-color: dodgerblue;
+    color: white;
+}
+
+ol{
+    background-color: white;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+span{
+    font-style: italic;
+}
