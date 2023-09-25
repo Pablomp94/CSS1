@@ -15,6 +15,6 @@ p.parrafo{
     border:5px solid red;
 }
 
-p.prim{
+.prim{
     text-transform: capitalize;
 }
