@@ -1,0 +1,20 @@
+*{
+    background-color: darkslateblue;
+    color: white;
+}
+
+h1.titulo{
+    text-align: center;
+}
+
+p.parrafo{
+    margin-left: 10px;
+}
+
+#p1{
+    border:5px solid red;
+}
+
+p.prim{
+    text-transform: capitalize;
+}
