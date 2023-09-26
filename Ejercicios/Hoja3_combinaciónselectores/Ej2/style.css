@@ -1,0 +1,49 @@
+h1{
+    color: teal;
+    font-size: 60px;
+}
+
+#ab{
+    color: green;
+}
+
+#rojo, a{
+    color: red;
+}
+
+.especial{
+    color: orange;
+}
+
+.destacado{
+    color: orange;
+}
+
+#subtitulo, p em{
+    color: blue;
+}
+
+p .especial{
+    color: purple;
+}
+
+td{
+    color: green;
+}
+
+strong{
+    color: orange;
+}
+
+table{
+    border: 1px solid black;
+}
+
+p{
+    color: olive;
+}
+
+#especial{
+    color: fuchsia;
+}
+
