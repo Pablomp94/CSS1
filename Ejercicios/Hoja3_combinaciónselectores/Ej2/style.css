@@ -35,8 +35,8 @@ strong{
     color: orange;
 }
 
-table{
-    border: 1px solid black;
+table, tr, th, td{
+    border: 1px solid black; border-collapse:collapse; padding: 5px;
 }
 
 p{
