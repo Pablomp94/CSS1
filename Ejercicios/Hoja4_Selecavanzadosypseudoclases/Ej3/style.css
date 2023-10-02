@@ -1,0 +1,42 @@
+h1{
+    margin-left: 40px;
+    color: blue;
+}
+
+table{
+    text-align: center;
+    
+}
+
+table,th,td{
+    border: 1px solid #333;
+    border-collapse: collapse;
+    font-family: Arial;
+    padding: 10px;
+}
+
+
+
+#azul{
+    background-color: lightblue;
+    padding-left: 1.2em;
+    padding-right: 0.3em;
+}
+
+#am{
+    background-color: yellow;
+}
+
+#hor{
+    th::first-letter{font-size: xx-large};
+    color: white;
+    background-color: rgb(15, 129, 97);
+}
+
+#hor:hover{
+    text-decoration: underline;
+}
+
+#azul:hover{
+    text-decoration: underline;
+}
