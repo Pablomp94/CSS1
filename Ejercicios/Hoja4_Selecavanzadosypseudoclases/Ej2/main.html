@@ -5,10 +5,10 @@
     <title>Document</title>
   </head>
   <style>
-    h2::first-letter{font-size:large}
-    h2::after p::first-line{text-indent: 2em;}
+    h2::first-letter{font-size:2em}
+    h2 + p{text-indent: 2em;}
     a::before{content: "→";}
-    abbr::after{ display: title; font-style: italic;}
+    abbr[title]::after{content: "("attr(title)")"; font-style: italic;}
   </style>
   <body>
     <!DOCTYPE html>

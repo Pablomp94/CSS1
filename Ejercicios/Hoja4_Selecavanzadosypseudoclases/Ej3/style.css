@@ -28,7 +28,7 @@ table,th,td{
 }
 
 #hor{
-    th::first-letter{font-size: xx-large};
+    first-letter{font-size: 2em};
     color: white;
     background-color: rgb(15, 129, 97);
 }
