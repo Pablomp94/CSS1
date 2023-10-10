@@ -1,3 +1,13 @@
+@media screen {
+    
+
+
+*{
+    -webkit-print-color-adjust: exact;
+}
+
+
+
 h1{
     text-align: center;
 }
@@ -21,4 +31,9 @@ table{
 th,td{
     border: 2px solid black;
     
+}
+
+th{
+    background-color: orange;
+}
 }

@@ -1,0 +1,49 @@
+@media screen {
+   body{
+    background-image: url(https://cdn.motor1.com/images/mgl/A99Px/s1/audi-sport-quattro-s1-replica.webp);
+    background-repeat: no-repeat;
+
+   } 
+    
+}
+
+@media print{
+    .li{
+        background-color: blue;
+    }
+    .blue{
+        background-color: lightblue;
+    }
+}
+
+
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+.li{
+    background-color: lightblue;
+}
+
+.blue{
+    background-color: blue;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+
+th,td{
+    border: 2px solid black;
+    
+}
+
+th{
+    background-color: orange;
+}
