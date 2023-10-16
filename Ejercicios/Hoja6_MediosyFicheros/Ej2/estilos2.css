@@ -2,6 +2,7 @@
    body{
     background-image: url(https://cdn.motor1.com/images/mgl/A99Px/s1/audi-sport-quattro-s1-replica.webp);
     background-repeat: no-repeat;
+    background-size: 100vw 100vh;
    } 
 
    .li{
@@ -26,7 +27,7 @@
     body{
         background-image: url(https://cdn.motor1.com/images/mgl/A99Px/s1/audi-sport-quattro-s1-replica.webp);
         background-repeat: no-repeat;
-    
+        background-size: 100vw 100vh;
        } 
         
 }
