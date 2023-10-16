@@ -1,8 +1,7 @@
-@media screen {
     
 
-
 *{
+    color-adjust:exact;
     -webkit-print-color-adjust: exact;
 }
 
@@ -30,10 +29,9 @@ table{
 
 th,td{
     border: 2px solid black;
-    
+    height: 20px;
 }
 
 th{
     background-color: orange;
-}
 }
