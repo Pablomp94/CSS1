@@ -31,7 +31,7 @@ img {
 #contenido #principal,
 #contenido #secundario,
 #pie {
-  border: 2px solid #777;
+  
 }
 #cabecera {
   clear: both;
@@ -117,4 +117,25 @@ img {
 }
 #lateral #publicidad {
   margin-top: 1em;
+}
+
+#menu{
+  border-bottom: solid #004C99 1px;
+}
+
+#noticias{
+  border: solid #C5C5C5 1px;
+}
+
+#publicidad{
+  border: dotted #CC6600 1px;
+}
+
+#secundario{
+  border: solid 1px #CC6600;
+}
+
+#pie{
+  border-top: solid #C5C5C5 1px;
+  border-bottom: solid #C5C5C5 1px;
 }
