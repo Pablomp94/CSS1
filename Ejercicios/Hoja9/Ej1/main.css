@@ -1,0 +1,11 @@
+h2{
+    margin: 20px;
+    width: 25%;
+    height: 300px;
+    background-color: lightblue;
+    text-align: center;
+    border: 10px solid pink;
+}
+img{
+    margin-top: 100%;
+}
