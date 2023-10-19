@@ -20,27 +20,27 @@ div{
 
 #uno{
     border: solid 2px blue;
-    border-top: solid 5px green;
+    border-top: double 5px green;
     padding: 5px;
 }
 
 #dos{
     border: blue 2px solid;
-    border-bottom: green 2px solid;
+    border-bottom: green thick dashed;
     padding: 5px;
 }
 
 #tres{
-    border-top: 5px green  solid;
-    border-bottom: 5px green  solid;
-    border-left: 10px green  solid;
-    border-right: 10px green  solid;
+    border-top: 5px green  dotted;
+    border-bottom: 5px green  dotted;
+    border-left: 10px green  dotted;
+    border-right: 10px green  dotted;
     padding: 5px;
 }
 
 #cuatro{
-    border-top: blue 8px solid;
-    border-right: red 3px solid;
+    border-top: blue 8px double;
+    border-right: red 3px dashed;
     border-bottom: white 7px solid;
     border-left: purple 7px solid;
     padding: 5px;

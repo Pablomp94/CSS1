@@ -1,11 +1,33 @@
-h2{
+h1{
+    text-align: center;
+}
+
+
+div{
     margin: 20px;
     width: 25%;
     height: 300px;
-    background-color: lightblue;
+    background-color: rgb(173, 216, 230);
     text-align: center;
     border: 10px solid pink;
+    display:inline-table;
+    
+    
 }
-img{
-    margin-top: 100%;
+#uno{
+    background-image: url("logoCSS.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#dos{
+    background-image: url("logoCSS.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#tres{
+    background-image: url("logoCSS.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
