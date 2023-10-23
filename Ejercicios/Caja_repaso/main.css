@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+
+.uno{
+    height: 70px;
+    margin: 20px;
+    text-align: center;
+    background-color: lightblue;
+    width: 50%;
+    border: green 5px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.dos{
+    height: 70px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    border: orange 5px solid;
+    border-radius: 30px;
+    text-decoration: underline;
+    margin: auto;
+    width: 25%;
+    background-color: rgb(22, 178, 22);
+}
+
+.tres{
+    height: 70px;
+    margin: 20px;
+    text-align: center;
+    border: blue 5px double;
+    background-color: pink;
+    margin-left: 50%;
+    width: 40%;
+}
+
+h2:hover{
+    background-color: yellow;
+}
