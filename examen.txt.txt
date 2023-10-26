@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Refranes</title>
+</head>
+
+<style>
+
+body{
+    background-color: rgb(29, 136, 208);
+}
+
+*{
+    font-style: sans-serif;
+    font-size: 1.25rem;
+}
+
+h1{
+    font-size: 50px;
+    color: white;  
+    text-shadow: 8px 1px grey; 
+}
+
+h1 span{
+    font-size: 50px;
+    color: black;
+    text-shadow: 8px 1px blue;
+    text-transform: uppercase;
+}
+
+span:hover{
+    color: white;
+    text-shadow: 8px 1px grey; 
+}
+
+div{
+    margin-top: 20px;
+}
+
+
+.uno{
+    background-color: white;
+    
+    border: 10px solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#uno{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#dos{
+    margin-right: 50%;
+}
+
+.dos{
+    border: 15px solid orange;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    text-align: center;
+    background-color: rgb(255, 221, 0);
+}
+
+#nar1{
+    margin-right: 50%;
+}
+
+#nar2{
+    margin-left: 50%;
+}
+
+.tres p{
+    border: 15px solid green;
+    text-align: center;
+    background-color: rgb(112, 238, 74);
+    color: white;
+}
+
+#ver1{
+    margin-left: 50%;
+}
+
+#ver2{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.cuatro{
+    background-color: rgb(0, 59, 252);
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 5px dashed white;
+    color: white;
+    text-align: center;  
+}
+
+.uno{
+    margin-right: 50%;
+}
+
+p::first-letter{
+    font-style: comic-sans;
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+b{
+    font-size: 1.3em;
+}
+
+p:hover{
+    text-decoration: underline;
+}
+
+@media screen, print{
+    p::first-letter{
+        
+    }
+}
+
+
+</style>
+
+
+<body>
+    <h1>FRASES DE <span>Albert Einstein</span></h1>
+
+
+    <div class="uno" id="uno">
+        <p>Locura es hacer la <b>misma</b> cosa una y otra vez esperando obtener <b>diferentes</b> resultados.</p>
+    </div>
+
+    <div class="dos" id="nar1">
+        <p>Dos cosas son infinitas: la <b>estupidez humana</b> y el <b>universo</b>; y no estoy seguro de lo segundo.</p>
+    </div>
+
+    <div class="tres" id="ver1">
+        <p>Lo importante es no dejar de <b>hacerse preguntas</b></p>
+    </div>
+
+    <div class="cuatro">
+        <p>Nunca pienso en el <b>futuro</b>. Llega demasiado pronto.</p>
+    </div>
+
+    <div class="uno" id="dos">
+        <p>No todo lo que cuenta puede ser cuantificado, y no todo lo que puede ser cuantificado cuenta.</p>
+    </div>
+
+    <div class="dos" id="nar2">
+        <p>Primero tienes que aprender las <b>reglas del juego</b>, y después jugar mejor que nadie.</p>
+    </div>
+
+    <div class="tres" id="ver2">
+        <p>El mayor <b>misterio</b> del mundo es que resulta comprensible.</p>
+    </div>
+
+</body>
+</html>
