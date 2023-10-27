@@ -12,7 +12,7 @@ body{
 }
 
 *{
-    font-style: sans-serif;
+    font-family:sans-serif;
     font-size: 1.25rem;
 }
 
@@ -128,7 +128,7 @@ p:hover{
 <body>
     <h1>FRASES DE <span>Albert Einstein</span></h1>
 
-
+.. 
     <div class="uno" id="uno">
         <p>Locura es hacer la <b>misma</b> cosa una y otra vez esperando obtener <b>diferentes</b> resultados.</p>
     </div>
@@ -143,7 +143,7 @@ p:hover{
 
     <div class="cuatro">
         <p>Nunca pienso en el <b>futuro</b>. Llega demasiado pronto.</p>
-    </div>
+    </div> 
 
     <div class="uno" id="dos">
         <p>No todo lo que cuenta puede ser cuantificado, y no todo lo que puede ser cuantificado cuenta.</p>
