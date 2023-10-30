@@ -1,0 +1,30 @@
+header{
+    background-color: lightgrey;
+    color:blue;
+    text-align: center;
+}
+
+header span{
+    text-decoration: underline;
+}
+
+div{
+    background-color: lightblue;
+    border: 10px solid pink;
+    text-align: center;
+    width: 30%;
+    position: relative;
+}
+
+.uno{
+    bottom: 0%;
+}
+
+.dos{
+    bottom: 10%;
+    left: 33%;
+}
+.tres{
+    left: 66%;
+    bottom: 20%;
+}
