@@ -1,0 +1,13 @@
+div{
+    background-color: rgb(181, 180, 180);
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
