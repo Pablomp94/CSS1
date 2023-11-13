@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Morales Puertas Pablo</title>
+   
+</head>
+
+<style>
+
+  @media screen {
+
+    div{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 10%;
+      margin-right: 10%;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    div, table, tr,th{
+      border: white 5px solid;
+      border-collapse: collapse; 
+    }
+
+    table{
+      margin-left: 3%;
+      margin-right: 3%;
+      margin-bottom: 3%;
+      margin-top: 3%;
+    }
+
+
+    th,td{
+      padding: 20px;
+    }
+
+    body{
+      background-color: darkturquoise;
+      font-size: 1.2em;
+      min-width: 400px;
+    }
+
+
+    *{
+      font-family: sans-serif;
+      text-align: center;
+      
+    }
+
+  span{
+    text-decoration: underline;
+  }
+
+  h4{
+    color: white;
+  }
+
+  th{
+    font-style: bold;
+    font-size: 1.3em;
+    color: gold;
+    text-shadow: grey 2px 3px;
+  }
+
+  
+
+  .blanco{
+    background-color: white;
+  }
+
+  .amarillo{
+    background-color: khaki;
+  }
+
+  .solucion{
+    color: darkturquoise;
+  }
+
+  .solucion:hover{
+    color: white;
+  }
+
+  td::after{
+    content:".";
+  }
+
+  }
+
+
+  @media print{
+    body{
+      font-family: sans-serif;
+      font-size: 1.1em;
+      text-align: center;
+      margin-top: 13%;
+    }
+
+    h4{
+      visibility: hidden;
+    }
+
+    table, th,td{
+      margin-left: 10%;
+      margin-right: 10%;
+      border: black 5px solid;
+      border-collapse: collapse;
+      padding: 20px;
+    }
+  }
+  
+</style>
+
+
+  <body>
+    <div>
+    <h4>Sitúa el ratón encima de cada <span>celda <strong>"SOLUCIÓN"</strong></span> para ver la solución.</h4>
+
+    <table>
+      <tr>
+        <th>ADIVINANZA</th>
+        <th>SOLUCIÓN</th>
+      </tr>
+      <tr>
+        <td class="blanco">No es <strong>cama</strong> ni es <strong>león</strong> y desaparece en cualquier rincón</td>
+        <td class="solucion">Camaleón</td>
+      </tr>
+      <tr>
+        <td class="amarillo">En la ciudad o en el campo es un <strong>amigo del hombre</strong>. Adivina cual es este animal sin que te diga su nombre</td>
+        <td class="solucion">Perro</td>
+      </tr>
+      <tr>
+        <td class="blanco">Oro parece, <strong>plata no es</strong>, quien no lo adivine listo no es</td>
+        <td class="solucion">Platano</td>
+      </tr>
+      <tr>
+        <td class="amarillo">Por dentro <strong>carbón</strong>, por fuera <strong>madera</strong>, en un estuche voy a la escuela</td>
+        <td class="solucion">El lápiz</td>
+      </tr>
+    </table>
+  </div>
+  </body>
+</html>
+
+
