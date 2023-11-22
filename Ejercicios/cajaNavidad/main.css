@@ -1,0 +1,64 @@
+#princ{
+    min-width: 700px;
+    max-width: 1000px;
+    min-height: 100%;
+}
+
+div #letras{
+    min-width: 550px;
+    min-height: 220px;
+    background-color: white;
+    position: relative;
+    top: 300px;
+    font-size: 28px;
+    
+}
+
+.uno{
+    word-spacing: 0.3em; 
+    font-style: italic; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#dos{
+    word-spacing: 0.2em;
+    
+}
+
+div #raya{
+    background-color: pink;
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("rayablanca.png");
+}
+
+
+
+div #punto{
+    background-color: red;
+    width: 60%;
+    height: 55%;
+    left: 30%;
+    position: absolute;
+    top: 0;
+    background-image: url("puntoBlanco.png");
+}
+
+#onda{
+    background-color: white;
+    width: 90%;
+    height: 40%;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    background-image: url("onda.png");
+}
+
+#cajaRegalo{
+    position: absolute;
+    left: 20%;
+    top: 48%;
+}
