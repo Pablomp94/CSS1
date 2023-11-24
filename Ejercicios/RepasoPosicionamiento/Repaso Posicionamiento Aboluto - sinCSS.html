@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head lang="es-ES">
+		<meta charset="utf8">
+		<title>Posicionamiento</title>		
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+    <style>
+      
+          *{
+	          margin: 0;
+	          padding: 0;   
+          }
+
+          h2{
+               text-align: center;
+               margin-top: 5%;
+          }
+
+          #contenedor{
+               border: 3px black dotted;
+               margin-left: 10%;
+               margin-right: 10%;
+               margin-top: 2%;
+               position: relative;
+          }
+
+          #contenedor div{
+               width: 60%;
+               padding-top: 15px;
+          }
+
+
+          #caja1{
+               background-color: rgb(229, 218, 218);
+               z-index: 4;
+               position:absolute;
+          }
+
+          #caja2{
+               background-color: yellow;
+               top:73px;
+               left:2%;
+               z-index: 3;
+               position:absolute;
+          }
+
+          #caja3{
+               background-color: lightblue;
+               top: 145px;
+               left: 4%;
+               z-index: 2;
+               position:absolute;
+          }
+
+          #caja4{
+               background-color: pink;
+               top: 235px;
+               left: 6%;
+               z-index: 1;
+               position:absolute;
+          }
+
+  </style>
+	<body>
+      <h2>Tipos de posicionamiento</h2>
+      <div id="contenedor">
+        <div id="caja1"><p><b>Posicionamiento relativo:</b><br>La caja se desplaza
+          respecto de su posición original.<br>El resto de elementos no ocupan su lugar.
+          <br>Se pueden producir solapamientos entre elementos.</p></div>
+		<div id="caja2"><p><b>Posicionamiento absoluto:</b><br>La caja se desplaza
+          respecto del contenedor más cercano posicionado.<br>El resto de elementos ocupan su lugar.
+          <br>Se pueden producir solapamientos entre elementos.</p></div>
+		<div id="caja3"><p><b>Posicionamiento fixo:</b><br>La caja se desplaza
+          respecto del viewport.<br>El resto de elementos ocupan su lugar.
+          <br>Se pueden producir solapamientos entre elementos.
+          <br>El elemento se queda fijo aunque el usuario haga scroll.</p></div>
+		<div id="caja4"><p><b>Posicionamiento flotante:</b><br>La caja se mueve
+          lo más a la izquierda o lo más a la derecha posible.<br>El resto de elementos 
+          intentan adaptar sus contenidos alrededor de la caja flotante.</p></div>
+	</body>
+</html>
