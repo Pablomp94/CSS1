@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <style>
+
+     /* ---- Cabecera ------ */
+      #cabecera{
+         width: 1200px;
+         height: 100px;
+         margin: 0;
+      }
+     /* ---- Menú ------ */
+      #menu{
+         width: 200px;
+         height: 450px;
+         margin-right: 5px;
+      }
+     /* ---- Contenidos ------------ */
+     div{
+      width: 1200px;
+      margin-top: 20px;
+      margin-left: auto;
+     }
+
+     #contenido{
+      width: 995px;
+      height: 450px;
+      margin: 0;
+     }
+     /* ---- Pie ---------- */
+     #pie{
+      height: 60px;
+     }
+  </style>
+
+</head>
+
+<body>
+ <div id="contenedor">
+    <div id="cabecera">
+        <h1 id="logo">Cabecera</h1>
+    </div> 
+
+    <!-- Menú principal -->
+    <div id="menu">
+       <ul>
+             <li><a href="#">Inicio</a></li>
+             <li class="seleccionado"><a href="#">Blog</a></li>
+             <li><a href="#">Fotos</a></li>
+             <li><a href="#">Contacto</a></li>
+             <li><a href="#">Enlaces</a></li>
+       </ul>
+    </div> <!-- /menú principal -->
+
+    <!-- Contenido -->
+    <div id="contenido">
+
+      <!-- Articulo -->
+      <div class="articulo">
+          <h2><a href="#">Artículo 1</a></h2>
+          <p class="info">
+             <span class="fecha">dd-mm-aaaa 00:00</span>
+             <span class="categoria"><a href="#">diseño</a></span>
+             <span class="autor"><a href="#">Nombre Apellido</a></span>
+             <span class="comentarios"><a href="#">Añadir comentario</a></span>
+          </p>
+
+          <p>Este es el primer artículo de este blog.</p>
+
+          <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+      </div> <!-- /articulo -->
+       
+      <!-- Articulo -->
+      <div class="articulo">
+          <h2><a href="#">Artículo 2</a></h2>
+          <p class="info">
+            <span class="fecha">dd-mm-aaaa 00:00</span>
+            <span class="categoria"><a href="#">diseño</a></span>
+            <span class="autor"><a href="#">Nombre Apellido</a></span>
+            <span class="comentarios"><a href="#">Añadir comentario</a></span>
+          </p>
+
+           <p>Este es el segundo artículo de este blog.</p>
+
+           <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+      </div> <!-- /articulo -->
+
+    </div> <!-- /contenido -->
+
+    <!-- Pie de página -->
+    <div id="pie">
+        <p id="copyright">Diseñado por </p>
+    </div> <!-- /pie de página -->
+
+ </div> <!-- /contenedor -->
+
+</body>
+</html>
