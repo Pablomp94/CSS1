@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <style>
+
+      body {
+         display: flex;
+         justify-content: center;
+
+         font-size: 1.1em;
+         color: white;
+         background-color: #E0E7FD;
+      }
+
+      #contenedor {
+         width: 1200px;
+         margin: 20px;
+      }
+
+      /* ---- Cabecera ------ */
+
+      #cabecera {
+         width: 1200px;
+         height: 100px;
+
+         margin: 0px;
+
+         background-color: #517FB8;
+      }
+
+      #logo {
+         display: inline-block;
+
+         position: relative;
+         left: 20px;
+         top: 30px;
+
+         margin: 0px;
+      }
+
+      /* ---- Menú ------  */
+      #menu {
+         width: 200px;
+         height: 450px;
+
+         float: left;
+
+         padding-top: 10px;
+         padding-bottom: 10px;
+
+         margin-right: 5px;
+
+         background-color: white;
+      }
+
+      #menu>ul {
+         margin-top: 5px;
+         margin-bottom: 5px;
+
+         margin-right: 10px;
+         margin-left: 10px;
+
+         padding: 0px;
+         list-style: none;
+
+      }
+
+      #menu>ul>li {
+
+         background-color: #CCD9E9;
+         padding-top: 5px;
+         padding-bottom: 5px;
+      }
+
+      #menu>ul>li:hover {
+         background-color: white;
+         color: #FFA94F;
+      }
+
+      li>a {
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 15px;
+         padding-right: 15px;
+
+         color: inherit;
+         text-decoration: none;
+         font-weight: bold;
+         /* cursor:pointer; VIENE POR DEFECTO*/
+      }
+
+      /* ---- Contenidos ------------ */
+      #contenido {
+         width: 995px;
+         height: 450px;
+
+         float: left;
+         margin: 0px;
+         background-color: white
+      }
+
+      .articulo {
+         color: #514A8B;
+         padding-right: 10px;
+         padding-left: 10px;
+
+         margin: 0px;
+      }
+
+      .articulo>h2 {
+         padding: 10px;
+
+         background-color: #E0E7FD;
+         
+      }
+
+      .info {
+         padding-bottom: 8px;
+         border-bottom: 1px solid #E0E7FD;
+      }
+
+      .info>span>a:hover {
+         color: #FF9000;
+      }
+
+      span {
+         padding-left: 15px;
+         color: #ADA5D3;
+      }
+      
+      .info>span>a{
+         color: inherit;
+      }
+
+      .fecha {
+         background: url(./multimedia/icono_fecha.gif) no-repeat 3px;
+      }
+
+      .categoria {
+         background: url(./multimedia/icono_categoria.gif) no-repeat 3px;
+      }
+
+      .autor {
+         background: url(./multimedia/icono_autor.gif) no-repeat 3px;
+      }
+
+      .comentarios {        
+         background: url(./multimedia/icono_comentarios.gif) no-repeat 3px;
+      }
+
+      /* ---- Pie ---------- */
+      #pie {
+         height: 60px;
+
+         clear: both;
+
+         background-color: #517FB8;
+      }
+
+      #pie>p {
+        display: inline-block;
+        position: relative;
+
+        left: 20px;
+      }
+
+      #copyright::after {
+         content: "Samuel Espín";
+      }
+   </style>
+
+</head>
+
+<body>
+   <div id="contenedor">
+      <header id="cabecera">
+         <h1 id="logo">Cabecera</h1>
+      </header>
+
+      <!-- Menú principal -->
+      <aside id="menu">
+         <ul>
+            <li><a href="#">Inicio</a></li>
+            <li class="seleccionado"><a href="#">Blog</a></li>
+            <li><a href="#">Fotos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Enlaces</a></li>
+         </ul>
+      </aside> <!-- /menú principal -->
+
+      <!-- Contenido -->
+      <main id="contenido"> <!-- Nota Samuel: Supongo que querias que aqui fuera el "section". 
+                                 Yo he usado "main", porque considero que es mas apropiado
+                                 desde un punto de vista semantico para html. -->
+         <!-- Articulo -->
+         <article class="articulo">
+            <h2><a href="#">Artículo 1</a></h2>
+            <p class="info">
+               <span class="fecha">dd-mm-aaaa 00:00</span>
+               <span class="categoria"><a href="#">diseño</a></span>
+               <span class="autor"><a href="#">Nombre Apellido</a></span>
+               <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
+
+            <p>Este es el primer artículo de este blog.</p>
+
+            <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+         </article> <!-- /articulo -->
+
+         <!-- Articulo -->
+         <article class="articulo">
+            <h2><a href="#">Artículo 2</a></h2>
+            <p class="info">
+               <span class="fecha">dd-mm-aaaa 00:00</span>
+               <span class="categoria"><a href="#">diseño</a></span>
+               <span class="autor"><a href="#">Nombre Apellido</a></span>
+               <span class="comentarios"><a href="#">Añadir comentario</a></span>
+            </p>
+
+            <p>Este es el segundo artículo de este blog.</p>
+
+            <p class="btn-more"><a href="#">Seguir leyendo...</a></p>
+         </article> <!-- /articulo -->
+
+      </main> <!-- /contenido -->
+
+      <!-- Pie de página -->
+      <footer id="pie">
+         <p id="copyright">Diseñado por </p>
+      </footer> <!-- /pie de página -->
+
+   </div> <!-- /contenedor -->
+
+</body>
+
+</html>

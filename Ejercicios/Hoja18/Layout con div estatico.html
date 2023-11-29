@@ -6,6 +6,13 @@
 
    body{
       font-size: 1.1em;
+      background-color: rgb(213, 235, 242);
+      color: white;
+   }
+
+   #contenedor{
+      width: 1200px;
+      margin: 20px auto 0 auto;
    }
 
      /* ---- Cabecera ------ */
@@ -13,66 +20,84 @@
          width: 1200px;
          height: 100px;
          margin: 0;
+         background-color: rgb(100, 100, 227);
       }
 
       #logo{
          position: relative;
-         top: 20px;
+         top: 30px;
+         left: 20px;
          margin: 0;
       }
      /* ---- Menú ------ */
       #menu{
          width: 200px;
          height: 450px;
-         
+         margin-right: 5px;
          padding-top: 10px;
          padding-bottom: 10px;
          float: left;
+         background-color: white;
       }
-      #menu ul{
+      #menu ul {
          margin-top: 5px;
          margin-bottom: 5px;
          margin-left: 10px;
          margin-right: 10px;
          padding: 0;  
+         list-style: none;
+      }
+
+      #menu ul li{
+         padding: 5px;
+         padding-bottom: 5px;
+         background-color: lightblue;
       }
 
       #menu ul li a{
-         padding-top: 5;
+         padding-top: 5px;
          padding-bottom: 5px;
          padding-left: 15px;
          padding-right: 15px;
          font-style: bold;
          text-decoration: none;
          cursor: pointer;
+         color: inherit;
       }
 
-      #menu ul li :hover{
+      #menu ul  :hover{
+         background-color: white;
          color:orange;
       }
+
      /* ---- Contenidos ------------ */
-     div{
-      
-      width: 1200px;
-      margin-top: 20px;
-      margin-left: auto;
+    
+     #contenido{
+      width: 995px;
+      height: 450px;
+      margin: 0;
+      float: left;
+      background-color: white;
      }
+
+    
      #contenido{
       float: left;
       width: 995px;
       height: 450px;
       margin: 0;
-      left: 20%;
-      position: absolute;
+      padding: 0;
+      position: relative;
+      color: purple;
      }
 
    /* ---- Articulos --------*/
 
-   .articulo{
-      
+   .articulo{ 
       margin: 0;
       padding-left: 10px;
       padding-right: 10px;   
+      
    }
 
    .articulo h2{
@@ -86,45 +111,50 @@
       border-bottom: 1px solid blue;
    }
 
-   .info a:hover{
-      color: #FF9000;
-   }
 
-   .info *{
+   .info span{
       padding-left: 15px;
       color: lightblue;
    }
 
+   .info a:hover{
+      color: #FF9000;
+   }
+
+   .info span a{
+      
+      color: inherit;
+   }
+
    
-   .fecha::before{
-      background-image: url("icono_fecha.gif");
-      margin-left: 8px;
+   .fecha{
+      background: url("icono_fecha.gif") no-repeat 0;
    }
 
-   .categoria::before{
-      background-image: url("icono_categoria.gif");
-      margin-left: 8px;
+   .categoria{
+      background: url("icono_categoria.gif") no-repeat 0;
    }
 
 
-   .autor::before{
-      background-image: url("icono_autor.gif");
-      margin-left: 8px;
+   .autor{
+      background: url("icono_autor.gif") no-repeat 0;
    }
 
-   .comentarios::before{
-      background-image: url("icono_comentarios.gif");
-      margin-left: 8px;
+   .comentarios{
+      background: url("icono_comentarios.gif") no-repeat 0;
    }
 
      /* ---- Pie ---------- */
      #pie{
       height: 60px;
-      top: 70%;
-      margin: 0;
-      padding: 0;
-      position: relative;
       clear: both;
+      background-color: rgb(100, 100, 227);
+     }
+
+     #pie p{
+      position: relative;
+      left: 20px;
+      display: inline-block;
      }
 
      #copyright::after{
