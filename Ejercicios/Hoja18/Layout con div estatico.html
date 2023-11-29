@@ -4,34 +4,134 @@
   <meta charset="UTF-8"/>
   <style>
 
+   body{
+      font-size: 1.1em;
+   }
+
      /* ---- Cabecera ------ */
       #cabecera{
          width: 1200px;
          height: 100px;
          margin: 0;
       }
+
+      #logo{
+         position: relative;
+         top: 20px;
+         margin: 0;
+      }
      /* ---- Menú ------ */
       #menu{
          width: 200px;
          height: 450px;
-         margin-right: 5px;
+         
+         padding-top: 10px;
+         padding-bottom: 10px;
+         float: left;
+      }
+      #menu ul{
+         margin-top: 5px;
+         margin-bottom: 5px;
+         margin-left: 10px;
+         margin-right: 10px;
+         padding: 0;  
+      }
+
+      #menu ul li a{
+         padding-top: 5;
+         padding-bottom: 5px;
+         padding-left: 15px;
+         padding-right: 15px;
+         font-style: bold;
+         text-decoration: none;
+         cursor: pointer;
+      }
+
+      #menu ul li :hover{
+         color:orange;
       }
      /* ---- Contenidos ------------ */
      div{
+      
       width: 1200px;
       margin-top: 20px;
       margin-left: auto;
      }
-
      #contenido{
+      float: left;
       width: 995px;
       height: 450px;
       margin: 0;
+      left: 20%;
+      position: absolute;
      }
+
+   /* ---- Articulos --------*/
+
+   .articulo{
+      
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;   
+   }
+
+   .articulo h2{
+      padding: 10px;
+      background-color: lightblue;
+   }
+
+
+   .info{
+      padding-bottom: 8px;
+      border-bottom: 1px solid blue;
+   }
+
+   .info a:hover{
+      color: #FF9000;
+   }
+
+   .info *{
+      padding-left: 15px;
+      color: lightblue;
+   }
+
+   
+   .fecha::before{
+      background-image: url("icono_fecha.gif");
+      margin-left: 8px;
+   }
+
+   .categoria::before{
+      background-image: url("icono_categoria.gif");
+      margin-left: 8px;
+   }
+
+
+   .autor::before{
+      background-image: url("icono_autor.gif");
+      margin-left: 8px;
+   }
+
+   .comentarios::before{
+      background-image: url("icono_comentarios.gif");
+      margin-left: 8px;
+   }
+
      /* ---- Pie ---------- */
      #pie{
       height: 60px;
+      top: 70%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      clear: both;
      }
+
+     #copyright::after{
+      content:"Pablo";
+     }
+
+
   </style>
 
 </head>
