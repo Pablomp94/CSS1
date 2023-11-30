@@ -1,0 +1,151 @@
+    @font-face {
+        font-family: "Pretty";
+        src: url("Pretty Summer.ttf");
+    }
+
+    #contenedor {
+        width:100vw;
+        height:100vh;
+    }
+
+    * {
+        padding:0;
+        margin:5px;
+        font-family: 'Segoe UI';
+    }
+
+    #nombre{
+        text-align: center;
+        color: green;
+    }
+
+    #nombre h3{
+        font-family:'Pretty';
+        /* src: url(Pretty\ Summer.ttf); */
+        font-size: 2.3em;
+        font-weight:normal;
+    }
+
+    #nombre h4{
+        font-size: 1.5em;
+        background-color: khaki;
+        display: inline-block;
+        font-weight:normal;
+    }
+
+    #logo{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 35px;
+    }
+
+
+    #menuH .IG{
+       position: relative;
+       top: 8px; 
+       left: 5px;
+    }
+
+    #menuH ul li:hover{
+        background-color: #A4D442;
+        color: white;
+    }
+
+    #menuH ul li{
+        display: inline;
+    }
+
+    #menuH ul li{
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+        color: green;
+        font-size: 1.5em;
+    }
+
+    #menuH ul{
+        margin: 15px;
+    }
+
+    #menuIzq ul{
+        float: left;
+        list-style: none;
+        text-align: center;
+        background-color: #A4D442;
+        color: white;
+        padding: 10px;
+        border: 1px solid grey;
+        top: 5px;
+        font-size: 1.2em;
+    }
+
+    #menuIzq ul li{
+        border-top: 1px grey solid;
+        padding: 5px;
+    }
+
+
+    #menuIzq ul li:hover{
+        background-color: #FFC107;
+    }
+
+   
+    #contenido{
+        float: left;
+        margin-top: 0;
+    }
+
+    #contenido .ficha{
+        border: 1px grey solid;
+        float: left;
+    }
+
+    #contenido .ficha h6{
+        font-size: 1.3em;
+        font-weight:normal;
+        text-align: center;
+        color: green;
+    }
+
+    .ficha div p img{
+        position: relative;
+        top: 13px;
+    }
+
+    .ficha div p{
+        font-size: 1.3em;
+    }
+
+
+    #pie{
+        clear: both;
+        width: 100%;
+
+        background-color: #A4D442;
+        /* overflow: hidden; */
+    }
+
+
+   .pieIzq{
+        float: left;
+        width: 48%;
+        padding-bottom: 13px;
+        margin-right: 0;
+   }
+
+    .pieDer{
+        float: left;
+        width: 48%;
+        margin-left: 0;
+   }
+
+      .clear{
+        clear: both;
+    } 
+
+    #pie .IG{
+        position: relative;
+        top: 8px; 
+        left: 5px;
+    }
