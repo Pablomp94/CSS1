@@ -8,9 +8,9 @@ body{
     color: red;
 }
 
-input{
-    margin-left: 30%;
-
+label{
+   float: left;
+   width: 120px;
 }
 
 *{
