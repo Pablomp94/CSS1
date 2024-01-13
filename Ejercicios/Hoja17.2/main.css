@@ -1,0 +1,64 @@
+ body{
+    font-family: Arial, sans-serif;
+  }
+  
+
+  #contenedor{
+    margin-right: 20%;
+  }
+
+  #apellido1, #apellido2, #direccion{
+    width: 15%;
+  }
+
+
+  #codigopostal, #provincia{
+    width: 5%;
+  }
+
+  #municipio, #pais, #email,#nombre, #telefonofijo, #telefonomovil{
+    width: 10%;
+  }
+
+
+  form ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  form ul li {
+    margin-bottom: 20px;
+  }
+  
+  .titulo {
+    float: left;
+    font-weight: bold;
+    width: 240px;
+  }
+  
+  .requerido {
+    color: red;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+   #alta{
+    background-image: linear-gradient(white,grey);
+    padding: 15px 20px;
+    margin-left: 89%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+  }
+  
+  .ayuda {
+    font-size: 0.8em;
+    color: #777;
+    visibility: hidden;
+  }
+  
