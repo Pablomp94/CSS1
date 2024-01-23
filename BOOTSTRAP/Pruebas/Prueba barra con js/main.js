@@ -12,8 +12,9 @@ window.addEventListener("load", function () {
 
         barra.classList.add("progress-bar-striped");
         
-        
-        for(let i = 0; i <= 100; i ++){
+        let i;
+
+        for(i = 0; i <= 100; i ++){
 
             let promesa1 = new Promise((resolver) => {
                 setTimeout(() => {resolver (i)},tiempo);
@@ -26,8 +27,13 @@ window.addEventListener("load", function () {
     
             mensaje1 = await promesa1;
             console.log(mensaje1);
+            if(i == 100){
+                alert("Instalación completada");
+            }
         }
-        }
+
+      
+    }
 
     cuenta();
 
