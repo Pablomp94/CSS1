@@ -13,7 +13,8 @@
   <body>
     
     <!--Titulo de la pagina inicial-->
-    <div class="container-fluid bg-info d-flex justify-content-center text-light">
+    <div class="container">
+    <div class="container bg-info d-flex justify-content-center text-light">
       <h1>Micro-Shop</h1>
     </div>
 
@@ -22,10 +23,10 @@
       <div class="container flex-row-reverse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Registrarse</a>
+            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M4.243 4.757a3.757 3.757 0 1 1 5.851 3.119 6.006 6.006 0 0 1 3.9 5.339.75.75 0 0 1-.715.784H2.721a.75.75 0 0 1-.714-.784 6.006 6.006 0 0 1 3.9-5.34 3.753 3.753 0 0 1-1.664-3.118Z"></path></svg> Registrarse</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 0 1 0 1.5h-2.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 0 1 0 1.5h-2.5A1.75 1.75 0 0 1 2 13.25Zm6.56 4.5h5.69a.75.75 0 0 1 0 1.5H8.56l1.97 1.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L6.22 8.53a.75.75 0 0 1 0-1.06l3.25-3.25a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734Z"></path></svg> Login</a>
           </li>
         </ul>
       </div>
@@ -39,14 +40,34 @@
 
         <div class="btn-group-vertical col-12 col-sm-3">
             <button type="button" class="btn btn-warning">Inicio</button>
-            <button type="button" class="btn btn-info">Productos</button>
+              <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
+                Productos
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                <li><a class="dropdown-item" href="#">Memoria RAM</a></li>
+                <li><a class="dropdown-item" href="#">Placas Base</a></li>
+              </ul>
+           
             <button type="button" class="btn btn-warning">Presupuesto</button>
             <button type="button" class="btn btn-info">Galería</button>
-            <button type="button" class="btn btn-warning">Pedidos</button>
+            <button type="button" class="btn btn-warning">Pedidos <span class="badge bg-info rounded-circle">3</span></h1></button>
         </div>
+
+        <div class="col-10 col-sm-8 ms-5">
+          <p>¡ Bienvenidos ! </p>
+          <p>En <h2>Micro-Shop</h2> encontrarás productos con calidad, buen precio y un servicio al cliente inmejorable!</p>
+        </div>
+
 
     </div>
 
+
+    <div class="d-flex flex-row text-black">
+
+
+    </div>
+  </div>
 
 
   </body>
