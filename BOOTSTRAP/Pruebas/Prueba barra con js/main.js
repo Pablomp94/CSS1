@@ -19,7 +19,7 @@ window.addEventListener("load", function () {
             let promesa1 = new Promise((resolver) => {
                 setTimeout(() => {resolver (i)},tiempo);
             })
-
+            
             barra.style.width = i + "%";
             barra.innerHTML = i + "%";    
 
