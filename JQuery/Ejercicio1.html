@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1 id="primero">Este es el primer texto</h1>
+    <h1 id="segundo">Este es el segundo texto</h1>
+
+    <script>
+      $(document).ready(function () {
+        $("#primero").click(function (){
+            $(this).css("background-color", "red");
+            $(this).css("font-size", "100px");
+            $(this).css("color", "white");
+        });
+        $("#segundo").click(function (){
+            $(this).css("background-color", "green");
+            $(this).css("font-size", "100px");
+            $(this).css("color", "white");
+        });
+      });
+    </script>
+  </body>
+</html>

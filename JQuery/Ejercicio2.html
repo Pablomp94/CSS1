@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <style>
+    table,th{
+        width: 30%;
+        border: 5px solid black;
+        font-size: 50px;
+        margin: auto;
+        margin-top: 10%;
+    }
+  </style>
+  <body>
+    
+    <table>
+        <tr>
+            <th id="primero">Primera fila</th>
+        </tr>
+        <tr>
+            <th id="segundo">Segunda fila</th>
+        </tr>
+    </table>
+
+    <script>
+      $(document).ready(function () {
+        $("#primero").click(function (){
+            $(this).css("background-color", "red");
+        });
+        $("#segundo").click(function (){
+            $(this).css("background-color", "blue");
+        });
+      });
+    </script>
+  </body>
+</html>
