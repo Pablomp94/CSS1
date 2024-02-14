@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Ejercicio1</title>
+  </head>
+  <style>
+    span {
+      color: blue;
+    }
+    ul li a {
+      font-size: 25px;
+    }
+    button {
+      font-size: 25px;
+      background-color: orange;
+    }
+  </style>
+  <body>
+    <h1>Tutoriales sobre <span>Diseño Web</span></h1>
+
+    <ul>
+      <li><a href="https://www.w3schools.com/html/" class="uno">HTML</a></li>
+      <li>
+        <a href="https://uniwebsidad.com/libros/css" class="uno">Introducción a CSS</a>
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/bootstrap4/default.asp" class="uno"
+          >Bootstrap 4</a
+        >
+      </li>
+      <li>
+        <a href="https://uniwebsidad.com/libros/fundamentos-jquery" class="uno"
+          >Fundamentos de jQuery</a
+        >
+      </li>
+      <li>
+        <a href="https://www.w3schools.com/jquery/default.asp" class="uno"
+          >Tutorial de jQuery</a
+        >
+      </li>
+    </ul>
+
+    <button>Resaltar tutoriales uniwebsidad</button>
+
+    <script>
+
+        
+
+      $("button").click(function (event) {
+        $('.uno').css("background", "orange");
+      });
+    </script>
+  </body>
+</html>
