@@ -48,20 +48,25 @@
     <button id="dos">Resaltar tutoriales w3school</button>
 
     <script>
-      $("#uno").click(function (event) {
-        $("ul li a[href]")
-          .filter(function () {
-            return $(this).contents("uniwebsidad");
-          })
-          .css("background", "orange");
-      });
-      $("#dos").click(function (event) {
-        $("ul li a[href]")
-          .filter(function () {
-            return $(this).contents("w3school");
-          })
-          .css("background", "green");
-      });
+    
+    $.expr[':'].uniwebsidad = function(obj){
+      return $(obj).attr('href').indexOf('https://uniwebsidad.com') > -1;
+    };
+
+    
+    $.expr[':'].w3schools = function(obj){
+      return $(obj).attr('href').indexOf('https://www.w3schools.com') > -1;
+    };
+
+   
+    $('#uno').click(function(){
+      $('a:uniwebsidad').css('background-color', 'yellow');
+    });
+
+    
+    $('#dos').click(function(){
+      $('a:w3schools').css('background-color', 'lightblue');
+    });
     </script>
   </body>
 </html>

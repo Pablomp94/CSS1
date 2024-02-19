@@ -47,13 +47,15 @@
     <button>Resaltar tutoriales uniwebsidad</button>
 
     <script>
-      $("button").click(function (event) {
-        $("ul li a[href]")
-          .filter(function () {
-            return $(this).contents("uniwebsidad");
-          })
-          .css("background", "orange");
-      });
+      
+    $.expr[':'].uniwebsidad = function(obj){
+      return $(obj).attr('href').indexOf('https://uniwebsidad.com') > -1;
+    };
+
+
+    $('button').click(function(){
+      $('a:uniwebsidad').css('background-color', 'yellow');
+    });
     </script>
   </body>
 </html>

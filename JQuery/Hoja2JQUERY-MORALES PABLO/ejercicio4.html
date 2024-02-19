@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <style>
     * {
@@ -18,14 +19,16 @@
     <button>Marcar 2º Elemento</button>
   </body>
   <script>
-    $.extend($.expr[":"], {
-      second: function () {
-        return (
-          
-        );
-      },
-    });
+    $(document).ready(function() {
+ 
 
-    $("button").click(function () {});
+    $.expr[':'].second = function(obj, index){
+      return index === 1; 
+    };
+  
+    $('button').click(function(){
+  $('ul li:second').css('background-color', 'yellow');
+  });
+});
   </script>
 </html>
