@@ -36,45 +36,34 @@
 		$.fn.darEfecto = function () {
 			$(this).fadeOut("slow");
 			$(this).fadeIn("slow");
+			return this;
         };
 
 		$.fn.negrita = function () {
-			$(this).css("text-decoration", "bold");
+			return this.css("font-weight", "bold");
         };
 
 		$.fn.sinNegrita = function () {
-			$(this).css("text-decoration", "none");
+			return this.css("font-weight", "normal");
         };
 
-		$.expr[":"].autor = function (elem, i, meta) {
-
-			var clas = "";
-          switch (meta[3]) {
-            case "DB":
-              clas = "(Dan Brown)";
-              break;
-            case "MA":
-              clas = "(Matilde Asensi)";
-              break;
-			case "DP":
-              clas = "(Douglas Preston)";
-              break;
-            default:
-              return false;
-          }
-          return $(elem).has(clas);		
-          };
+		$.expr[':'].autor = function (elem, i, meta) {
+            return $(elem).text().includes(meta[3]);
+        };
           
-		$("li").click(function(event){
+		$("li").click(function(event) {
+			var autor;
+			if ($(this).hasClass('DB'))
+				autor='Dan Brown';
+			if ($(this).hasClass('MA'))
+				autor='Matilde Asensi';	
+			if ($(this).hasClass('DP'))
+				autor='Douglas Preston';			
+		    
+		    $('li').sinNegrita();
 
-			var cla = $(this).attr("class");
-			
-			$('li:autor('+cla+')').darEfecto(),negrita();
-
-			$(this).click(function(event){
-			$('li:autor('+cla+')').darEfecto(),sinNegrita();
-			});
-        });
+		    $('li:autor('+autor+')').darEfecto().negrita();
+		});  
 
 		
 		

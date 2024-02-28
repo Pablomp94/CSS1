@@ -78,43 +78,25 @@
         );
 
         $.fn.estilar = function (color_letra, color_fondo) {
-			$(this).css("background-color", color_fondo);
-            $(this).css("color", color_letra);
+			      return this.css({"color": color_letra, "background-color": color_fondo});
         };
 
         $.expr[":"].tieneClase = function (elem, i, meta) {
-          var clas = "";
-          switch (meta[3]) {
-            case "especial":
-              clas = "especial";
-              break;
-            case "super":
-              clas = "super";
-              break;
-            default:
-              return false;
-          }
-          return $(elem).hasClass(clas);
+          return $(elem).hasClass(meta[3]);
         };
 
 		$.expr[":"].noTieneClases = function (elem, i, meta) {
-          var clas = " ";
-          switch (meta[3]) {
-            case "sin clase":
-				clas = "";
-				break;
-            default:
-              return false;
-          }
-          return $(elem).hasClass(clas);
+          return $(elem).attr("class")==null;
         };
 
 		$("#boton").click(function(event){
 			var fondo = "yellow";
 			var letra=$('#color').val();
 			var clase = $('#clase').val();
-			$('p:tieneClase('+clase+')').estilar(letra, fondo);
-			$('p:noTieneClases('+clase+')').estilar(letra, fondo);
+			if(clase == "sin clase")
+        $("p:noTieneClases").estilar(letra, "yellow");
+      else
+        $("p:tieneClase("+clase+")").estilar(letra, "yellow");
 		});
 
 		$("#resetear").click(function(event){

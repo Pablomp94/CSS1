@@ -23,7 +23,7 @@
  
 
     $.expr[':'].second = function(obj, index){
-      return index === 1; 
+      return $(obj).eq(1); 
     };
   
     $('button').click(function(){
