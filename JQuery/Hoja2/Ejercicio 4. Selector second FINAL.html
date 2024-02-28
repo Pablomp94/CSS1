@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <style>
+/*  	 ul li {display: inline;} */
+  </style>
+</head>
+
+<body>
+	<h1> Listado de elementos </h1>
+	<ul id="lista1">
+		<li>Elemento 1</li>
+    <li>Elemento 2 de clase especial</li>
+		<li>Elemento 3 de clase especial</li>
+	</ul>
+
+    <h1> Listado de elementos </h1>
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+	<input type="button" id="boton" value="Marcar 2º elemento"/> 
+
+  <div id="div1">
+    <p> Este es el primer párrafo</p>
+    <p> Este es el segundo párrafo</p>
+    <p> Este es el tercer párrafo</p>  
+  </div>
+
+    <input type="button" id="boton2" value="Marcar 2º parrafo"/> 
+
+  <div id="div2">
+    <p> Este es el primer párrafo</p>
+    <p> Este es el segundo párrafo</p>
+    <p> Este es el tercer párrafo</p>  
+  </div>
+
+
+
+<script>
+	$(document).ready(function(){
+
+        //Como pseudo-selector. Devuelve true o false, segun cumpla o no la condición.
+	    $.expr[':'].second = function (elem, i, meta) {
+            return $(elem).is(':nth-child(2)');
+
+            // otra opcion
+            // return $(elem).index == 1;
+	    };
+
+	    $("#boton").click(function(event) {
+            $('ul li:second').css("color","orange");
+	    }); 		
+
+        $("#boton2").click(function(event) {
+            $('p:second').css("color","blue");
+        });   
+
+	});
+
+</script>
+</body>
+</html>

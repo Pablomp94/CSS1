@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> -->
+  <style>
+  </style>
+</head>
+
+<body>
+	<h1> Listado de elementos </h1>
+	<ul id="lista1">
+		<li>Elemento 1</li>
+    <li class="especial">Elemento 2 de clase especial</li>
+		<li class="especial">Elemento 3 de clase especial</li>
+	</ul>
+
+	<input type="button" id="boton" value="Marcar 2º elemento"/> 
+
+
+<script>
+	$(document).ready(function(){
+		
+
+    //Como método de $(). Devuelve el segundo objeto que cumple la condición
+        $.fn.second = function() { 
+		    return $(this).eq(1);  
+         }
+
+		$("#boton").click(function(event) {
+      		$('ul li').second().css("color","orange");   
+		}); 		
+
+
+	});
+
+</script>
+</body>
+</html>

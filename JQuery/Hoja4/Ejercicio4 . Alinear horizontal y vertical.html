@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Biblioteca</title>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	
+		$(function() {
+			$("#boton").click(function(event) {
+				if ($("#biblioteca>li").hasClass('horizontal')){					
+					$("#biblioteca>li").removeClass('horizontal');
+					impares("#biblioteca>li", "white");
+					$("#boton").html("Alinear Horizontalmente");
+				}else{
+					$('#biblioteca > li').addClass("horizontal");
+					impares('#biblioteca > li','lightBlue');	
+					$("#boton").html("Alinear Verticalmente");
+
+				}						
+			});
+		});
+
+		function impares(lista, color)
+		{
+			$(lista +' ul li:even').css('background-color', color);
+		}
+	</script>
+	<style>
+		#biblioteca {
+			float:left; 
+			border:solid blue 3px;
+			padding-top:15px;
+			padding-bottom:15px;
+		}
+		ul li {padding-right: 15px; }
+		
+		.horizontal {
+			float:left;
+			margin:20px;
+			list-style:none;
+		}
+		#boton {float:left;
+				clear:both;}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Biblioteca. Fecha: 	
+		<script>
+			var f = new Date();
+			document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+		</script>
+	</h1>
+	<ul id="biblioteca">
+		<li><b>SERIES</b>
+			<ul>
+				<li>Prison Break</li>
+				<li>Scandal</li>
+				<li>Revenge</li>
+				<li>Juego de tronos</li>
+			</ul>
+		</li>
+		<li><b>PELICULAS</b>
+			<ul>
+				<li>Avatar</li>
+				<li>Fast and Furious</li>
+				<li>La cruda realidad</li>
+				<li>Chantaje</li>
+			</ul>
+		</li>
+		<li><b>LIBROS</b>
+			<ul>
+				<li>Tiranosaurio</li>
+				<li>El códice maya</li>
+				<li>El último catón</li>
+				<li>La princesa</li>
+			</ul>
+		</li>
+	</ul>
+	<button type="button" class="btn btn-primary" id="boton">Alinear Horizontalmente</button>
+
+</div>
+</body>
+</html>

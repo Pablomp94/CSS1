@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		.container {width:50%; border:solid blue 3px; padding:15px;}
+		h1 {text-align:center; 
+			color:blue;}
+		p {background-color:pink;}
+		select {color:blue;}
+		.ComboColor {width:15%;}
+
+	</style>
+</head>
+
+<body>
+  <div class="container">
+	<h1>JQuery + Bootstrap </h1>
+	<br>
+
+	<p class="especial">Este es un párrafo <b>ESPECIAL</b>. </p>
+	<p>Este es un párrafo <b>NORMAL</b>. </p>
+	<p class="especial">Este es otro párrafo <b>ESPECIAL</b>. </p>
+	<br>
+  
+	<div class="ComboColor">
+		<label for="color"><b>Elige color:</b></label>
+		<select class="form-control" id="color">
+			<option>Black</option>
+			<option>Red</option>
+			<option>Blue</option>
+			<option>White</option>
+			<option>Green</option>
+			<option>Yellow</option>
+		</select>
+		<input type="button" class="btn btn-primary" id="boton" value="Cambiar Párrafos Especiales"/> 
+	</div>
+  </div>
+	<script>
+		$(document).ready(function(){
+			$("#boton").click(function(event) {
+				$("p.especial").css('color',color.value);
+			});  
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  	span {color:blue;}
+  	li {font-size:1.5em;}
+  	#boton {background: orange;font-size:1.3em;}
+  </style>
+</head>
+
+<body>
+	<h1>Tutoriales sobre <span>Diseño Web</span></h1>
+	<ul>
+		<li><a href="https://www.w3schools.com/html/">HTML</a></li>
+		<li><a href="https://uniwebsidad.com/libros/css">Introducción a CSS</a></li>
+		<li><a href="https://www.w3schools.com/bootstrap4/default.asp">Bootstrap 4</a></li>		
+		<li><a href="https://uniwebsidad.com/libros/fundamentos-jquery">Fundamentos de JQuery</a></li>
+		<li><a href="https://www.w3schools.com/jquery/default.asp">Tutorial de jQuery</a></	
+	</ul>
+
+	<br><br>
+
+	<input type="button" id="boton" value="Resaltar tutoriales uniwebsidad"/> 
+
+<script>
+	$(document).ready(function(){
+
+		$.expr[':'].uniwebsidad = function (elem, i, meta) {
+			return $(elem).attr('href').toLowerCase().startsWith('https://uniwebsidad.com');
+         };
+
+		$("#boton").click(function(event) {
+			$('ul li a:uniwebsidad').css("background","orange");
+		}); 		
+
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  <style>
+  	span,label {color:blue;}
+  	li {font-size:1.5em;}
+    a {color:black;text-decoration: none;}
+   	.especial {
+   		background:yellow !important;
+   		color:red !important;
+   	}
+    #combo {font-size:1.5em;margin-left: 15px;width: 300px;float:left;}
+    #boton1 {color:blue;font-size:1.6em;margin-top:33px;margin-left: 10px;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+	<h1>Tutoriales sobre <span id="titulo">Diseño Web</span></h1>
+	<ul id="tutoriales">
+		<li><a href="https://www.w3schools.com/html/">HTML</a></li>
+		<li><a href="https://uniwebsidad.com/libros/css">Introducción a CSS</a></li>
+		<li><a href="https://uniwebsidad.com/libros/fundamentos-jquery">Fundamentos de JQuery</a></li>
+		<li><a href="https://www.w3schools.com/bootstrap4/default.asp">Bootstrap 4</a></li>		
+		<li><a href="https://www.w3schools.com/jquery/default.asp">Tutorial de jQuery</a></li>
+	</ul>
+
+	<br>
+
+    <div class="form-group" id="combo">
+       <label for="sel1">Web de Procedencia:</label>
+       <select class="form-control" id="web">
+          <option><h3>uniwebsidad</h3></option>
+          <option><h3>w3schools</h3></option>
+       </select>
+    </div>
+  	<input type="button" id="boton1" value="Resaltar"/> 	
+ </div>
+
+<script>
+	$(document).ready(function(){
+		
+		$.expr[':'].filtro = function (elem, i, meta) {
+			var ref = '';
+			switch (meta[3]) {
+				case 'uniwebsidad':
+					ref = 'https://uniwebsidad';
+					break;
+				case 'w3schools':
+					ref = 'https://www.w3schools';
+					break;
+				default:
+					return false;
+			}
+			return $(elem).attr('href').toLowerCase().startsWith(ref);
+
+		};
+        
+        
+        // Extendiendo los métodos jQuery
+		$.fn.resaltar = function () {
+                return this.each(function() {
+					       $(this).css({'background':'orange','color':'black'});         			    
+				});
+			};
+
+
+
+		$("#boton1").click(function(event) {
+			//Quitar todos los filtros anteriores
+			$('ul li a').css({'background':'white','color':'black'});
+
+			//Resaltar los seleccionados
+			$('ul li a:filtro('+$('#web').val()+')').resaltar();
+		}); 		
+
+	});
+
+</script>
+</body>
+</html>

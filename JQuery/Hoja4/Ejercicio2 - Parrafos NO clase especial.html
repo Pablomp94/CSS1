@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+<p class="especial">Este es un parrafo especial </p>
+<p>Este es un parrafo normal </p>
+<p class="especial">Este es otro parrafo especial </p>
+
+<input type="button" id="boton" value="Cambiar color NO especial"/> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#boton").click(function(event) {
+        $("p:not(.especial)").css('color','red');
+    });  
+});
+</script>
+</body>
+</html>

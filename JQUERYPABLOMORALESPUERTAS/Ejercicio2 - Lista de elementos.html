@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script src="./jquery.min.js"></script>
+	<link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="./bootstrap.min.js"></script>
+
+	<style>
+		.container {width:50%; border:solid hotpink 3px; padding:15px;}
+		h1 {text-align:center; 
+			color:hotpink;}
+		li {color:blue;font-size:1.3em;}
+
+	</style>
+</head>
+
+<body>
+  <div class="container">
+	<h1>Lista de Libros</h1>
+	<br>
+
+	<ul>
+		<li class='DB'>Inferno (Dan Brown)</li>
+		<li class='MA'>El último Catón (Matilde Asensi)</li>
+		<li class='DP'>El códice Maya (Douglas Preston)</li>
+		<li class='DP'>Tiranosaurio (Douglas Preston)</li>
+		<li class='MA'>Todo bajo el cielo (Matilde Asensi)</li>
+		<li class='DB'>La fortaleza digital (Dan Brown)</li>
+	<br>
+
+  <script>
+	$(document).ready(function(){
+
+		$('body').prepend('<h2 style="text-align:center">Pablo Morales Puertas</h2>');
+
+		$.fn.darEfecto = function () {
+			$(this).fadeOut("slow");
+			$(this).fadeIn("slow");
+        };
+
+		$.fn.negrita = function () {
+			$(this).css("text-decoration", "bold");
+        };
+
+		$.fn.sinNegrita = function () {
+			$(this).css("text-decoration", "none");
+        };
+
+		$.expr[":"].autor = function (elem, i, meta) {
+
+			var clas = "";
+          switch (meta[3]) {
+            case "DB":
+              clas = "(Dan Brown)";
+              break;
+            case "MA":
+              clas = "(Matilde Asensi)";
+              break;
+			case "DP":
+              clas = "(Douglas Preston)";
+              break;
+            default:
+              return false;
+          }
+          return $(elem).has(clas);		
+          };
+          
+		$("li").click(function(event){
+
+			var cla = $(this).attr("class");
+			
+			$('li:autor('+cla+')').darEfecto(),negrita();
+
+			$(this).click(function(event){
+			$('li:autor('+cla+')').darEfecto(),sinNegrita();
+			});
+        });
+
+		
+		
+
+		
+        });
+
+
+  </script>
+</body>
+</html>
